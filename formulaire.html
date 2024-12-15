@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UberBagarre - Reserver une bagarre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo UberBagarre">
+        <h1>Reserver une bagarre</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formulaire.html">Reserver une bagarre</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="POST">
+
+            <label for="date-bagarre">Date de la bagarre :</label>
+            <input type="date" id="date-bagarre" name="date-bagarre" required>
+
+            <label for="heure-bagarre">Heure de la bagarre :</label>
+            <input type="time" id="heure-bagarre" name="heure-bagarre" required>
+
+            <label for="adresse">Adresse du rendez-vous :</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Ex. 123 Rue de l'Exemple, Paris" required>
+
+            <p>Options supplementaires :</p>
+            
+            <p>Voulez-vous une video du combat ?</p>
+            <input type="checkbox" id="video" name="video">
+            <label for="video">Oui, ajouter une video</label>
+
+            <input type="checkbox" id="commentaires" name="commentaires">
+            <label for="commentaires">Avec commentaires en direct</label>
+
+            <button type="submit">Reserver</button>
+        </form>
+    </main>
+    <footer>
+        <p>2024 UberBagarre</p>
+    </footer>
+</body>
+</html>
